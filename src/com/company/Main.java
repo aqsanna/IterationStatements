@@ -58,21 +58,73 @@ public class Main {
         }
 
         for (int yy = 1; yy < 10; yy++) {
-            for (int jj = 1; jj < yy ; jj++) {
+            for (int jj = 1; jj < yy; jj++) {
                 System.out.print("-");
 
             }
             System.out.println();
         }
 
-        for (int a = 1; a < 10; a++) {
-            for (int b = a; b < 10; b++) {
-                System.out.print("*");
+        for (int a = 1; a < 7; a++) {
+            for (int b = 7; b >= a; b--) {
+                System.out.print(" ");
             }
-            System.out.println();
+            for (int c = a; c > 0; c--) {
+                System.out.print(" " + c);
+            }
+            System.out.println(" ");
+        }
+
+        // fory fori mej
+        for (int p = 1; p < 11; p++) {
+            System.out.println("p = " + p);
+            System.out.println("^^^^^^^^^^^^^^^");
+
+            for (int y = 1; y < 11; y++) {
+                System.out.println(" y = " + y);
+            }
+            System.out.println("^^^^^^^^^^^^^^^");
+        }
+        // whiley whilei mej
+        int p = 1;
+        while (p < 11) {
+            System.out.println("p = " + p);
+            System.out.println("&&&&&&&&&&&&&&&&");
+            int y = 1;
+            while (y < 11) {
+                System.out.println("y = " + y);
+                y++;
+            }
+            p++;
+        }
+        System.out.println("&&&&&&&&&&&&&&&&");
+
+        // fory whili mej
+        int uu = 1;
+        while (uu < 11) {
+            System.out.println("uu = " + uu);
+            System.out.println("@@@@@@@@@@@@@@");
+            for (int tt = 1; tt < 11; tt++) {
+                System.out.println("tt = " + tt);
+            }
+            uu++;
+        }
+        System.out.println("@@@@@@@@@@@@@@@@");
+
+        // whily fori mej
+        for (int d = 1; d < 11; d++) {
+            System.out.println("d = " + d);
+            System.out.println("!!!!!!!!!!!!!!!!!!");
+            int s = 1;
+            while (s < 11) {
+                System.out.println("s = " + s);
+                s++;
+            }
+            System.out.println("!!!!!!!!!!!!!!!!!");
         }
     }
 }
+
 
 
 
