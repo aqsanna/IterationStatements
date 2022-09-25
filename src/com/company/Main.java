@@ -1,5 +1,7 @@
 package com.company;
 
+import com.sun.security.jgss.GSSUtil;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -46,6 +48,16 @@ public class Main {
         System.out.println("l = " + l);
 
         // tpel patkerner
+
+        /*
+        ******
+        *****
+        ****
+        ***
+        **
+        *
+
+         */
         for (int i = 1; i < 10; i++) {
             for (int j = i; j < 10; j++) {
                 System.out.print("*");
@@ -53,6 +65,23 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println("-------------------");
+
+        for(int i = 4; i >= 0; i--){
+            for(int j = 0; j <= i; j++){
+                System.out.print("%");
+            }
+            System.out.println();
+        }
+
+        /*
+        -
+        --
+        ---
+        ----
+        -----
+         */
+        System.out.println("-------------------");
         for (int i = 1; i < 10; i++) {
             for (int j = 1; j < i; j++) {
                 System.out.print("-");
@@ -61,6 +90,13 @@ public class Main {
             System.out.println();
         }
 
+        /*
+               1
+              2 1
+             3 2 1
+            4 3 2 1
+         */
+        System.out.println("-------------------");
         for (int i = 1; i < 7; i++) {
             for (int j = 7; j >= i; j--) {
                 System.out.print(" ");
@@ -70,7 +106,74 @@ public class Main {
             }
             System.out.println(" ");
         }
+        /*
+        qarakusi
+        * * * *
+        * * * *
+        * * * *
+        * * * *
+         */
+        System.out.println("-------------------");
+        for(int i = 0; i < 4; i++){
+            for (int j = 0; j < 4; j++){
+                System.out.print(" # ");
+            }
+            System.out.println();
+        }
 
+        /*
+           # ## ### ####
+           # ## ###
+           # ##
+           #
+         */
+        System.out.println("-------------------");
+        for(int i =4; i >= 0; i--){
+            for(int j =0; j <= i; j++){
+                System.out.print(" ");
+                for( int k = 0; k < j; k++){
+                    System.out.print("#");
+                }
+            }
+
+            System.out.println();
+        }
+
+        /*
+            $
+           $$
+          $$$
+         $$$$
+        $$$$$
+         */
+        System.out.println("-------------------");
+        for(int i = 0; i <= 6; i++ ){
+            for(int j = 6; j >= i; j--){
+                System.out.print(" ");
+            }
+            for(int j = 0; j <= i; j++){
+                System.out.print("$");
+            }
+            System.out.println();
+        }
+        System.out.println("-------------------");
+        /*
+        ######
+         #####
+          ####
+           ###
+            ##
+             #
+         */
+        for(int i =0; i < 6; i++){
+            for(int j =0; j <= i; j++){
+                System.out.print(" ");
+            }
+            for(int j =6; j > i; j--){
+                System.out.print("#");
+            }
+            System.out.println();
+        }
         // fory fori mej
         for (int i = 1; i < 11; i++) {
             System.out.println("i = " + i);
